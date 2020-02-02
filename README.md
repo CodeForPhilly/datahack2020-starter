@@ -31,9 +31,11 @@ Enter the following into the file.
 ```bash
 DATAHACK_DB_PASS=<PUT PASSWORD HERE>
 DATAHACK_DB_USER=<PUT USER NAME HERE>
+DATAHACK_DB_HOST=<PUT HOST HERE>
+DATAHACK_DB_PORT=<PUT PORT HERE>
 ```
 
-During the hackathon we will give you a user name and password to use.
+During the hackathon we will give you the information to fill in everything starting with `<PUT ...`.
 
 
 Getting started with Python
@@ -47,8 +49,10 @@ Enter the following into it.
 ```bash
 DATAHACK_DB_PASS=<PUT PASSWORD HERE>
 DATAHACK_DB_USER=<PUT USER NAME HERE>
+DATAHACK_DB_HOST=<PUT HOST HERE>
+DATAHACK_DB_PORT=<PUT PORT HERE>
 ```
 
-During the hackathon we will give you a user name and password to use.
+During the hackathon we will give you the information to fill in everything starting with `<PUT ...`.
 
 
