@@ -1,0 +1,33 @@
+---
+title: "test_rstudio"
+output: html_document
+---
+
+```{r}
+# Run the code below if you need to set database credentials! 
+# It will open a file to edit. Once your credentials are saved,
+# you will need to restart RStudio.
+#
+# install.packages("usethis")
+# library(usethis)
+# edit_r_environ()
+```
+
+```{r}
+library(dplyr)
+library(tibble)
+
+con <- DBI::dbConnect(
+  RPostgres::Postgres(),
+  user = Sys.getenv("DATAHACK_DB_USER"),
+  password = Sys.getenv("DATAHACK_DB_PASS"),
+  port = 30001,
+  host = "45.79.16.246",
+  dbname = "postgres"
+)
+
+tbl(con, 'mtcars') %>%
+  mutate(c = a + b)
+
+```
+
